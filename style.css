@@ -2,3 +2,15 @@
 h1{
 color: green;
 }
+input{
+        display: block;
+}
+form {
+         
+        
+         border: 1px solid black;
+}
+.input-container{
+  display: flex;  
+   gap: 50px;     
+}
