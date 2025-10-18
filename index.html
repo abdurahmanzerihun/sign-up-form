@@ -25,18 +25,18 @@
     <div class="sign-up-container">
 
       <div class="paragraph">
-        <p>
+        <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Vero cum odio natus quod praesentium, voluptas, veniam ipsum 
           error molestiae earum hic dolorem dignissimos quos numquam nemo. 
           Officiis explicabo exercitationem vitae.
         </p>
-        <p>You know you want this.</p>
+        <p class="para2">You know you want to.</p>
       </div>
 
       <form action="">
         <div class="form-container">
-          <h4>Let's do this!</h4>
+          <p id="lets-do">Let's do this!</p>
 
           <div class="input-container">
             <div class="part1">
@@ -64,7 +64,7 @@
 
               <label>
                 Phone Number
-                <input type="tel" name="phone">
+                <input type="tel" name="phone" pattern='[0-9]{3}-[0-9]{3}-[0-9]{3}'required >
               </label>
 
               <label>
@@ -77,10 +77,10 @@
       </form>
 
       <div class="account">
-        <button type="submit">Create Account</button>
+        <button type="submit" id="create-acct">Create Account</button>
         <p>
           Already have an account? 
-          <a href="#">Log in</a>
+          <a href="#" id="log-in">Log in</a>
         </p>
       </div>
     </div>

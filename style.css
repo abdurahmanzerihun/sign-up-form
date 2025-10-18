@@ -1,6 +1,16 @@
 /* Check */
+    @font-face {
+        font-family: "myfont"; /* Choose a name for your font */
+        src: url("fonts/Overpass-VariableFont_wght.ttf") format("truetype"); /* Adjust the path and filename */
+        /* Optional: Add font-weight and font-style if needed for different variations */
+         font-weight: normal; 
+        /* font-style: normal; */
+    }
+:root{
+font-size: 18px;
+    }
 body{
-
+font-family: 'myfont';
 }
 .container{
  
@@ -12,18 +22,51 @@ input{
         display: block;
 }
 form {
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-       
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+       border-bottom:0.1px solid rgba(156, 151, 151,0.6) ;
+       padding: 8px;
+
 }
 .form-container{
-         /* padding: 10px;  */
-         /* margin-bottom: 100px;  */
+         padding: 10px;  
+          margin: 10px;  
         /* margin-bottom: 200px; */
+        font-size: 0.6em;
 }
 
 .input-container{
   display: flex;  
    gap: 50px;     
+}
+/* Form Validation */
+label input:focus{
+ border: 1px solid blue !important;
+}
+label{
+        margin-top: 15px; 
+}
+input{
+        border-radius: 5px;
+}
+input:invalid{
+        border: 1px solid red;
+}
+input:valid{
+        border: 1px solid green;
+}
+button{
+ color: white;
+background-color:rgb(53, 134, 255);
+padding: 8px 30px 8px 30px;
+border-radius: 5px;
+border: none;
+/* font-size: 0.7rem; */
+}
+a{
+color: rgb(53, 134, 255);
+}
+.sign-up-container{
+        /* margin-top: 30px; */
 }
 .main-img{
 /* position: relative; */
@@ -48,17 +91,38 @@ object-fit: cover;
 .logo-banner{
          position: absolute;
         display: flex;
-        bottom:450px;
-        right: 180px;
+        bottom:500px;
+        /* right: 18px; */
         align-items: center;
         color: aliceblue;
-        background-color:rgba(0, 0, 0, 0.5);
+        background-color:rgba(0, 0, 0, 0.4);
+        width: 100%;
+        justify-content: center;
+        font-family: 'Norse-Bold';
 }
 
 .account{
-        margin: 20px;
+        margin: 20px 20px 20px 40px;
+        font-size: 0.8rem;
 }
 .paragraph{
         padding: 20px;
         margin: 10px;
+        font-weight: bold;
+        
+}
+.para2{
+        font-style: italic;
+        
+}
+#lets-do{
+        font-size: 1rem;
+        font-weight: bold;
+}
+#log-in{
+        font-weight: bold;
+}
+#create-acct{
+        font-size: 0.8rem;
+        font-weight: bold;
 }
