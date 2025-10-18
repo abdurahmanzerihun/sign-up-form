@@ -1,4 +1,10 @@
 /* Check */
+body{
+
+}
+.container{
+ 
+}
 h1{
 color: green;
 }
@@ -6,11 +12,53 @@ input{
         display: block;
 }
 form {
-         
-        
-         border: 1px solid black;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+       
 }
+.form-container{
+         /* padding: 10px;  */
+         /* margin-bottom: 100px;  */
+        /* margin-bottom: 200px; */
+}
+
 .input-container{
   display: flex;  
    gap: 50px;     
+}
+.main-img{
+/* position: relative; */
+display: block;
+width: 500px;  
+height: 700px; 
+object-fit: cover;
+}
+.container{
+        display: flex;
+}
+.picture{
+        position: relative;
+        display: inline-block;
+}
+.overlay-img{
+        
+        
+        width: 100px;
+        height: 100px;
+}
+.logo-banner{
+         position: absolute;
+        display: flex;
+        bottom:450px;
+        right: 180px;
+        align-items: center;
+        color: aliceblue;
+        background-color:rgba(0, 0, 0, 0.5);
+}
+
+.account{
+        margin: 20px;
+}
+.paragraph{
+        padding: 20px;
+        margin: 10px;
 }

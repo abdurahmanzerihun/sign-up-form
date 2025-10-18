@@ -1,72 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign-up Form</title>
-        <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-        <div class="picture-container">
-                <div class="picture">
-                        <img src="" alt="image">
+  <div class="container">
 
-                </div>
-            <div class="logo-container">
+    <!-- Picture Section -->
+    <div class="picture-container">
+      <div class="picture">
+        <img src="images/sign-up-img.jpg" alt="Sign-up Illustration" class="main-img">
 
+        <div class="logo-banner">
+          <img src="images/odin-lined.jpg" alt="Odin Logo" class="overlay-img">
+          <span>Odin</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign-Up Section -->
+    <div class="sign-up-container">
+
+      <div class="paragraph">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Vero cum odio natus quod praesentium, voluptas, veniam ipsum 
+          error molestiae earum hic dolorem dignissimos quos numquam nemo. 
+          Officiis explicabo exercitationem vitae.
+        </p>
+        <p>You know you want this.</p>
+      </div>
+
+      <form action="">
+        <div class="form-container">
+          <h4>Let's do this!</h4>
+
+          <div class="input-container">
+            <div class="part1">
+              <label>
+                First Name
+                <input type="text" name="firstName" required>
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="email" required>
+              </label>
+
+              <label>
+                Password
+                <input type="password" name="password" required>
+              </label>
             </div>
-        </div>
-        <div class="sign-up-container">
-             <div class="paragraph">
-               <p>abcdhdfhgjfdhfmhdkhgkfhdgjdrbdfvfv</p>
-             </div>
-        <div class="form">
-            <form action="">
-                <h4>Lets do this !</h4>
-              <div class=input-container>
-                 <div class="part1">
-                      
-                 <label for="">
-                        First Name
-                        <input type="text">
-                </label>
-                        
-                 <label for="">
-                        Email
-                        <input type="email">
-                 </label>
-                 <label for="">
-                        Passsword
-                        <input type="password">
-                 </label> 
-                </div>
-                <div class="part2">
-                <label for="">
-                        Last Name
-                        <input type="text">
-                 </label>
-                 <label for="">
-                        Phone Number
-                        <input type="">
-                 </label>
-                 <label for="">
-                        Confirm Password
-                        <input type="text">
-                 </label>
-                 </div>       
-                </div>
-                
-                 
-                </form>
-        </div>
-                <button>
-                    Create Acccount
-                </button>
-                <p>Already have an account?</p>
-             </div>
-        </div>
 
-</div>       
+            <div class="part2">
+              <label>
+                Last Name
+                <input type="text" name="lastName" required>
+              </label>
+
+              <label>
+                Phone Number
+                <input type="tel" name="phone">
+              </label>
+
+              <label>
+                Confirm Password
+                <input type="password" name="confirmPassword" required>
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="account">
+        <button type="submit">Create Account</button>
+        <p>
+          Already have an account? 
+          <a href="#">Log in</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
