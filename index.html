@@ -10,16 +10,19 @@
   <div class="container">
 
     <!-- Picture Section -->
-    <div class="picture-container">
-      <div class="picture">
+    
+      <div class="picture-container">
         <img src="images/sign-up-img.jpg" alt="Sign-up Illustration" class="main-img">
-
+        <div id="credit">
+          <div>Photo on:<a href="https://www.freepik.com">freepik</a></div>
+        </div>
         <div class="logo-banner">
           <img src="images/odin-lined.jpg" alt="Odin Logo" class="overlay-img">
-          <span>Odin</span>
+          <span class="odin">Odin</span>
+          
         </div>
       </div>
-    </div>
+   
 
     <!-- Sign-Up Section -->
     <div class="sign-up-container">
@@ -41,35 +44,45 @@
           <div class="input-container">
             <div class="part1">
               <label>
-                First Name
+                <div class="fn">
+                   FIRST NAME
                 <input type="text" name="firstName" required>
+                </div>
               </label>
 
               <label>
-                Email
+                <div>
+                  EMAIL
                 <input type="email" name="email" required>
-              </label>
-
-              <label>
-                Password
+                </div>
+                 </label>
+                 <label>
+                <div>
+                   PASSWORD
                 <input type="password" name="password" required>
+                </div>
               </label>
             </div>
 
             <div class="part2">
               <label>
-                Last Name
+                <div>
+                   LAST NAME
                 <input type="text" name="lastName" required>
+                </div>
               </label>
-
               <label>
-                Phone Number
+                <div>
+                   PHONE NUMBER
                 <input type="tel" name="phone" pattern='[0-9]{3}-[0-9]{3}-[0-9]{3}'required >
+                </div>
               </label>
 
               <label>
-                Confirm Password
+                <div>
+                   CONFIRM PASSWORD
                 <input type="password" name="confirmPassword" required>
+                </div>
               </label>
             </div>
           </div>
@@ -80,7 +93,7 @@
         <button type="submit" id="create-acct">Create Account</button>
         <p>
           Already have an account? 
-          <a href="#" id="log-in">Log in</a>
+          <a href="#" id="login">Log in</a>
         </p>
       </div>
     </div>

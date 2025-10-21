@@ -1,10 +1,16 @@
 /* Check */
-    @font-face {
+  @font-face {
         font-family: "myfont"; /* Choose a name for your font */
         src: url("fonts/Overpass-VariableFont_wght.ttf") format("truetype"); /* Adjust the path and filename */
-        /* Optional: Add font-weight and font-style if needed for different variations */
          font-weight: normal; 
-        /* font-style: normal; */
+       
+    }
+    @font-face {
+      
+        font-family: "Norse";
+      src: url("fonts/Norse-Bold.otf") format("opentype");
+        font-weight: normal; 
+       
     }
 :root{
 font-size: 18px;
@@ -13,46 +19,10 @@ body{
 font-family: 'myfont';
 }
 .container{
- 
+        display: flex;
 }
 h1{
 color: green;
-}
-input{
-        display: block;
-}
-form {
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
-       border-bottom:0.1px solid rgba(156, 151, 151,0.6) ;
-       padding: 8px;
-
-}
-.form-container{
-         padding: 10px;  
-          margin: 10px;  
-        /* margin-bottom: 200px; */
-        font-size: 0.6em;
-}
-
-.input-container{
-  display: flex;  
-   gap: 50px;     
-}
-/* Form Validation */
-label input:focus{
- border: 1px solid blue !important;
-}
-label{
-        margin-top: 15px; 
-}
-input{
-        border-radius: 5px;
-}
-input:invalid{
-        border: 1px solid red;
-}
-input:valid{
-        border: 1px solid green;
 }
 button{
  color: white;
@@ -60,50 +30,9 @@ background-color:rgb(53, 134, 255);
 padding: 8px 30px 8px 30px;
 border-radius: 5px;
 border: none;
-/* font-size: 0.7rem; */
 }
-a{
-color: rgb(53, 134, 255);
-}
-.sign-up-container{
-        /* margin-top: 30px; */
-}
-.main-img{
-/* position: relative; */
-display: block;
-width: 500px;  
-height: 700px; 
-object-fit: cover;
-}
-.container{
-        display: flex;
-}
-.picture{
-        position: relative;
-        display: inline-block;
-}
-.overlay-img{
-        
-        
-        width: 100px;
-        height: 100px;
-}
-.logo-banner{
-         position: absolute;
-        display: flex;
-        bottom:500px;
-        /* right: 18px; */
-        align-items: center;
-        color: aliceblue;
-        background-color:rgba(0, 0, 0, 0.4);
-        width: 100%;
-        justify-content: center;
-        font-family: 'Norse-Bold';
-}
-
-.account{
-        margin: 20px 20px 20px 40px;
-        font-size: 0.8rem;
+a {
+color: black;
 }
 .paragraph{
         padding: 20px;
@@ -119,10 +48,105 @@ object-fit: cover;
         font-size: 1rem;
         font-weight: bold;
 }
-#log-in{
-        font-weight: bold;
+
+/* Form */
+input{
+        display: block;
+         border-radius: 5px;
 }
+form {
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+       border-bottom:0.1px solid rgba(156, 151, 151,0.6) ;
+       padding: 8px;
+
+}
+.form-container{
+         padding: 10px;  
+          margin: 10px;  
+        font-size: 0.6em;
+}
+
+.input-container{
+  display: flex;  
+   gap: 50px;
+font-size: 0.5rem;   
+     
+   
+}
+label{
+        margin: 15px;
+        
+}
+/* account creation part */
+.account{
+        margin: 20px 20px 20px 40px;
+        font-size: 0.8rem;
+}
+
 #create-acct{
         font-size: 0.8rem;
         font-weight: bold;
 }
+#login{
+color: rgb(53, 134, 255);
+text-decoration: none;
+ font-weight: bold;
+}
+
+/* Form Validation */
+input:focus{
+ border: 1px solid blue !important;
+ outline: none;
+}
+
+input:invalid{
+        border: 1px solid red;
+}
+input:valid{
+        border: 1px solid green;
+}
+
+/* Image part */
+.main-img{
+display: block;
+width: 500px;  
+height: 700px; 
+object-fit: cover;
+}
+
+.picture-container{
+        position: relative;
+        display: inline-block;
+}
+.overlay-img{
+        
+        
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+}
+.logo-banner{
+         position: absolute;
+        display: flex;
+        bottom:500px;
+        /* right: 18px; */
+        align-items: center;
+        color: aliceblue;
+        background-color:rgba(0, 0, 0, 0.4);
+        width: 100%;
+        justify-content: center;
+        font-family: 'Norse';
+}
+.odin{
+        font-size: 3.5rem;
+}
+#credit{
+        position: absolute;
+        display: flex;
+        bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+}
+
