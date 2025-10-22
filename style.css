@@ -32,7 +32,7 @@ border-radius: 5px;
 border: none;
 }
 a {
-color: black;
+ color: rgb(69, 69, 69);
 }
 .paragraph{
         padding: 20px;
@@ -141,6 +141,7 @@ object-fit: cover;
         font-size: 3.5rem;
 }
 #credit{
+        color: rgb(69, 69, 69);
         position: absolute;
         display: flex;
         bottom: 10px;
